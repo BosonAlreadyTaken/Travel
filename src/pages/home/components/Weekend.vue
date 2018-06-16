@@ -34,7 +34,7 @@ export default {
         id: '0003',
         imgUrl: 'http://img1.qunarzz.com/sight/source/1507/d9/2ddc7652fdba16.jpg_r_640x214_5e62f1a3.jpg',
         title: '深圳欢乐谷',
-        desc: '佛心无形观宇宙，茶禅一味悟人生。一场禅茶东方文化的精彩演出'
+        desc: '佛心无形，茶禅一味悟人生。一场禅茶东方文化的精彩演出'
       }]
     }
   }
