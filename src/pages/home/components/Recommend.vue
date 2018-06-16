@@ -2,7 +2,7 @@
   <div>
     <div class="title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl">
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,24 +17,11 @@
 <script>
 export default {
   name: 'Recommend',
+  props: {
+    list: Array
+  },
   data () {
     return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1611/97/97dbde6eccdfef72a3.water.jpg_200x200_e0efe6da.jpg',
-        title: '东部华侨城',
-        desc: '佛心无形观宇宙，茶禅一味悟人生。一场禅茶东方文化的精彩演出'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1805/6f/6f885ea8b30c67bca3.water.jpg_200x200_21b03a9c.jpg',
-        title: '世界之窗',
-        desc: '佛心无形观宇宙，茶禅一味悟人生。一场禅茶东方文化的精彩演出'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1805/17/176c2114bb8ae255a3.water.png_200x200_a1b6cfdf.png',
-        title: '深圳欢乐谷',
-        desc: '佛心无形观宇宙，茶禅一味悟人生。一场禅茶东方文化的精彩演出'
-      }]
     }
   }
 }
